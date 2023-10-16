@@ -5,7 +5,7 @@ import Regist from "./pages/Regist.page";
 
 const router = createBrowserRouter([
   {
-    path: '/index',
+    path: '/',
     element: <Index />
   },
   {
