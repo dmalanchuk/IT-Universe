@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../styles/components/forminput.scss'
+import '../styles/ui/forminput.scss'
 
 const Forminput = (props) => {
 
@@ -13,7 +13,7 @@ const Forminput = (props) => {
   return (
     <div className="form-input">
       <label>{label}</label>
-      <input {...inputProps} onChange={onChange}  onBlur={handleFocus} focused={focused.toString()} onFocus={() => inputProps.name === "confirmPassword" && setFocused(true)}/>
+      <input className="input"  {...inputProps} onChange={onChange} onBlur={handleFocus} focused={focused.toString()} onFocus={() => inputProps.name === "confirmPassword" && setFocused(true)} />
       <span>{errorMessage}</span>
     </div>
   )

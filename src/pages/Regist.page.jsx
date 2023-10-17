@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Forminput from '../components/Forminput'
+import '../styles/components/registerform.scss'
 
 const Regist = () => {
 
@@ -45,7 +46,7 @@ const Regist = () => {
             type: "password",
             placeholder: "confirm password",
             errorMessage: "Passwords don't match!",
-            label: "ConfirmPassword",
+            label: "Confirm Password",
             pattern: values.password,
             required: true
         }
@@ -64,12 +65,23 @@ const Regist = () => {
     console.log(values);
 
     return (
-        <form onSubmit={handleSubmit}>
-            {inputs.map((input) => (
-                <Forminput key={input.id} {...input} value={values[input.name]} onChange={onChange} />
-            ))}
-            <button>sing up</button>
-        </form>
+        <div className="regist">
+            <div className="first-side">
+                <div className="card-side">
+                    <h1>Create <span className="span">Account</span></h1>
+                    <form onSubmit={handleSubmit}>
+                        {inputs.map((input) => (
+                            <Forminput key={input.id} {...input} value={values[input.name]} onChange={onChange} />
+                        ))}
+                        <button>Sing up</button>
+                    </form>
+                </div>
+            </div>
+            <div className="secondary-side">
+                <h1>i<span className="span">Team</span></h1>
+            </div>
+        </div>
+
     )
 }
 

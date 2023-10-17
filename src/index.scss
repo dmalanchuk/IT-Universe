@@ -1,6 +1,13 @@
-@import url("./styles/components/slidenav.scss");
+@import url("./styles/ui/slidenav.scss");
 
 // extend and mixin
 
 @import url("./styles/extends/extend.scss");
 @import url("./styles/mixins/mixins.scss");
+
+// reset
+
+body {
+    margin: 0;
+    padding: 0;
+}
