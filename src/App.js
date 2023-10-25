@@ -3,6 +3,7 @@ import Index from "./pages/Index.page";
 import Login from "./pages/Login.page"
 import Regist from "./pages/Regist.page";
 
+
 const router = createBrowserRouter([
   {
     path: '/',
