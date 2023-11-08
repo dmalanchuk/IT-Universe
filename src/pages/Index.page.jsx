@@ -1,10 +1,15 @@
 import React from 'react'
+import '../styles/components/modules/index.scss'
+import Navbar from '../components/Navbar'
 
 const Index = () => {
   return (
-    <div className="index-page">
-      
-    </div>
+    <header className="header">
+      <Navbar />
+        <div className="container">
+          
+      </div>
+    </header>
   )
 }
 
