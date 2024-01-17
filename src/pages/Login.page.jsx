@@ -54,7 +54,7 @@ const Login = () => {
                         {inputs.map((input) => (
                             <Forminput key={input.id} {...input} value={values[input.name]} onChange={onChange} />
                         ))}
-                        <button>Login</button>
+                        <button className="button"><a href="/prod">Login</a></button>
                     </form>
                 </div>
             </div>

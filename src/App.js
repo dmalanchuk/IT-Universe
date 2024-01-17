@@ -3,7 +3,7 @@ import Index from "./pages/Index.page";
 import Login from "./pages/Login.page"
 import Regist from "./pages/Regist.page";
 import Contact from "./pages/Contact.page";
-import Product from "./pages/Product.page";
+import ProductPage from "./pages/Product.page";
 
 
 const router = createBrowserRouter([
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/prod',
-    element: <Product />
+    element: <ProductPage />
   },
   {
     path: '/contact',

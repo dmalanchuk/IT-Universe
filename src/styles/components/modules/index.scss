@@ -14,8 +14,32 @@ sans-serif;
 
 //header
 
+.header1 {
+    background: #2c2f33;
+    color: #fff;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+
+    h1 {
+        font-size: 68px;
+        font-family: $main-font;
+
+        width: 1000px;
+        margin: 0 auto;
+
+    }
+
+}
+
 .header {
     background: #2c2f33;
+    color: #fff;
 
     min-height: 100vh;
 }
@@ -25,6 +49,7 @@ sans-serif;
 .navbar {
     display: flex;
     justify-content: space-between;
+
 
     background: #23272a;
 
@@ -36,16 +61,30 @@ sans-serif;
     margin: 0 auto;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .nav-search {
+
     width: 120px;
+    margin: 0 auto;
+
+    margin-top: 20px;
+
+    .search {
+
+        background: #23272a;
+        border-radius: 15px;
+
+    }
 }
 
-.search,
 .nav-logo {
+    span {
+        color: #00ddff;
+    }
+
     justify-content: center;
     align-items: center;
 
@@ -62,7 +101,14 @@ sans-serif;
     text-align: left;
     padding-left: 15px;
 
+    background: #2c2f33;
+    color: white;
+
     width: 200px;
+}
+
+.search:focus {
+    outline: none;
 }
 
 .nav {
@@ -79,18 +125,11 @@ sans-serif;
     width: 400px;
 }
 
-.nav-button {
-    width: 230px;
-    height: 35px;
-
-    border-radius: 15px;
-
-    display: flex;
-    justify-content: space-evenly;
-}
 
 .link {
     color: white;
+
+    transition: 0.3s;
 }
 
 .link:hover {
@@ -98,3 +137,72 @@ sans-serif;
     padding-bottom: 5px;
 }
 
+// ==-=-=-=-=-=-=============================
+
+.button-wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 20px;
+
+    .btn {
+        width: 120px;
+        padding: 5px;
+        font-size: 26px;
+
+        transition: 0.4s;
+    }
+
+    .btn:hover {
+        border-bottom: 1px solid #7289da;
+        padding-bottom: 5px;
+    }
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 100%;
+}
+
+.text {
+    height: 400px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    input {
+        width: 600px;
+
+        text-align: left;
+
+        background: #23272a;
+        color: #fff;
+        border: 3px solid#23272a;
+        border-radius: 5px;
+    }
+
+    .ad4 {
+        height: 200px;
+    }
+}
+
+.buttons {
+    .btn {
+        width: 110px;
+        padding: 5px;
+
+        transition: 0.4s;
+    }
+
+    .btn:hover {
+        border-bottom: 1px solid #7289da;
+        padding-bottom: 5px;
+    }
+}

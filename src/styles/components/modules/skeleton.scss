@@ -1,0 +1,64 @@
+.skeleton {
+    margin: 0 auto;
+    margin-top: 30px;
+
+    width: 1000px;
+    height: 500px;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: #23272a;
+
+    .img1 {
+
+        width: 400px;
+        height: 250px;
+        border-radius: 15px;
+
+        background: #2c2f33;
+    }
+
+    .title1 {
+        width: 200px;
+        height: 20px;
+
+        border-radius: 5px;
+
+        background: #2c2f33;
+    }
+
+    .price1 {
+        width: 100px;
+        border-radius: 5px;
+        height: 20px;
+
+        background: #2c2f33;
+    }
+
+    .description1 {
+        width: 400px;
+        height: 250px;
+        border-radius: 15px;
+
+        background: #2c2f33;
+    }
+
+    .href1 {
+        width: 200px;
+        border-radius: 5px;
+        height: 20px;
+
+        background: #2c2f33;
+    }
+}
+
+.skeleton-block {
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

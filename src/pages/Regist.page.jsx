@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Forminput from '../components/Forminput'
 import '../styles/components/registerform.scss'
+import ProductPage from './Product.page'
 
 const Regist = () => {
 
@@ -73,7 +74,7 @@ const Regist = () => {
                         {inputs.map((input) => (
                             <Forminput key={input.id} {...input} value={values[input.name]} onChange={onChange} />
                         ))}
-                        <button>Sing up</button>
+                        <button className="button"><a href="/prod">Sing up</a></button>
                     </form>
                 </div>
             </div>
